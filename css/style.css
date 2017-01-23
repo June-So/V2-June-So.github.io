@@ -1,0 +1,136 @@
+.container-fluid
+  {
+    height: 100vh;
+  }
+/* Conteneur du bouton progress bar */
+[class*="skill-"]{
+  box-sizing: border-box;
+  width: 80px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Bouton interne à la progress bar*/
+/*.btnn-skill{
+  position: absolute;
+  top: 7%;
+  left: 9%;
+  width: 82%;
+  height: 82%;
+  text-align: center;
+  border-radius: 100%;
+  /*line-height: 40px;*/
+  /*font-size: 8px;
+  color: #fff;*/
+  /*padding:0; margin:0; overflow:hidden;
+   background:#598585;
+   background:-moz-radial-gradient(center, ellipse cover,  #598585 0%, #00445f 99%);
+   background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#598585), color-stop(99%,#00445f));
+   background:-webkit-radial-gradient(center, ellipse cover,  #598585 0%,#00445f 99%);
+   background:-o-radial-gradient(center, ellipse cover,  #598585 0%,#00445f 99%);
+   background:-ms-radial-gradient(center, ellipse cover,  #598585 0%,#00445f 99%);
+   background:radial-gradient(ellipse at center,  #598585 0%,#00445f 99%);*/
+/*}*/
+
+#indexCompetence{
+  background-color: #243f46;
+}
+.icon{
+  position: absolute;
+  bottom: 23px;
+  right: 18px;
+  font-size: 42px;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* -- Accueil -- */
+.header-home{
+  height: 34vh;
+  padding: 50px;
+}
+
+.presentation-content{
+  background-color: #fff;
+  color: black;
+  min-height: 60vh;
+}
+
+.info{
+  padding: 40px 60px;
+  text-align: center;
+}
+/* -- projet -- */
+.project{
+  border: 8px solid #243f46;
+  min-height: 250px;
+  padding: 10px;
+}
+
+@media (min-width: 985px) {
+  .project{
+    height: 300px;
+  }
+}
+
+.badge{
+  background-color: #243f46;
+  color: #fff;
+  margin: 2px;
+}
+/* -- En savoir plus -- */
+.border-dashed{
+  border: 4px dashed #fff;
+  padding: 10px;
+}
+/* -- -- */
+.navbar{
+  height: 1vh;
+}
+.main-content{
+  padding-top: 50px;
+  min-height: 100vh;
+  /*#4095A0*/
+  background-color: #243f46;
+  color: #fff;
+}
+
+.bg-white{
+  background-color: #fff;
+  color: black;
+}
+.bg-dark{
+  background-color: #243f46;
+  color: #fff;
+}
+
+.title-dark{
+  background-color: #243f46;
+  color: #fff;
+  padding: 5px 18px;
+}
+
+.second-content{
+  padding: 42px;
+  min-height: 68vh;
+}
+
+.fa-circle{
+  color: #243f46;
+}
+
+#listLanguages{
+  padding: 40px;
+  flex-wrap: nowrap;
+}
+
+#listFrameworks{
+  padding: 30px 20px;
+}
+
+.li-skill{
+  margin: 4px 0px;
+}
