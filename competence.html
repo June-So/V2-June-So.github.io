@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>June CV</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="css/style.css"/>
@@ -11,7 +11,6 @@
 
   <body>
     <div class="container-fluid">
-
       <!-- Menu -->
       <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
@@ -23,24 +22,37 @@
           <li><a href="en-savoir-plus.html">En savoir plus</a></li>
         </ul>
       </nav>
-
       <div class="row main-content bg-dark">
         <!-- Langage, Framework, Tasks -->
-        <div class="col-md-offset-1 col-md-10 bg-white">
-          <div class="col-md-12">
-            <h2 class="col-md-9 title-dark">Langages</h2>
-            <h2 class="col-md-3 title-dark">Frameworks</h2>
-            <div id="listLanguages" class="flex col-md-offset-2 col-md-6">
+        <div class="col-sm-12 col-md-offset-1 col-md-10 bg-white">
+            <div class="col-sm-8 col-md-9">
+              <h2 class="title-dark">Langages</h2>
+              <div id="listLanguages" class="col-sm-12 col-md-offset-2 col-md-8">
+              </div>
             </div>
-            <div id="listFrameworks" class="col-md-offset-1 col-md-3">
+            <div class="col-sm-4 col-md-3">
+              <h2 class="title-dark">Frameworks</h2>
+              <div id="listFrameworks" class="col-sm-12 col-md-12">
+              </div>
             </div>
-          </div>
-
         </div>
         <!-- Liste des annexes outils -->
-        <div class="second-content col-md-offset-1 col-md-10 bg-white">
-
-          <div class="col-md-3">
+        <div class="second-content col-md-offset-1 col-md-10 col-sm-12 bg-white">
+          <div class="col-md-3 col-sm-6">
+            <div id="listOs" class="col-md-12">
+              <h2 class="title-dark">Environnements</h2>
+              <hr/>
+            </div>
+            <div id="listIde" class="col-md-12">
+              <h2 class="title-dark">IDE</h2>
+              <hr/>
+            </div>
+            <div id="listDb" class="col-md-12">
+              <h2 class="title-dark">Base de données</h2>
+              <hr/>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
             <div id="listTools" class="col-md-12">
               <h2 class="title-dark">Gestion de projet</h2>
               <hr/>
@@ -50,34 +62,24 @@
               <hr/>
             </div>
           </div>
-          <div class="col-md-3">
-            <div id="listOs" class="col-md-12">
-              <h2 class="title-dark">Environnements</h2>
-              <hr/>
-            </div>
-            <div id="listIde" class="col-md-12">
-              <h2 class="title-dark">Ide</h2>
-              <hr/>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-5">
+          <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-10">
             <hr>
             <ul>
-              <li>Conception et Réalisation de base de données.</li>
+              <li>Conception et Modélisation de base de données.</li>
               <li>Site Responsive</li>
-              <li>Programmation orienté objet</li>
+              <li>Programmation Orienté Objet</li>
               <li>Architecture MVC</li>
               <li>Regex</li>
-              <li>ligne de commande</li>
+              <li>Ligne de commande</li>
+              <li>Conception Maquette</li>
             </ul>
           </div>
         </div>
-
       </div>
-
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="bower_components/jquery-circle-progress/dist/circle-progress.js"></script>
     <script src="JS/SkillController.js"></script>
+    <script src="JS/analytics.js"></script>
   </body>
 </html>

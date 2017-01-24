@@ -136,7 +136,8 @@
 
 #listLanguages{
   padding: 40px;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #listFrameworks{

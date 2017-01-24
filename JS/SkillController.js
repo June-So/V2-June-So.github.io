@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  /* Donées */
   var listLanguages = [
      {
        'name':'PHP',
@@ -8,7 +10,7 @@ $(document).ready(function(){
      {
        'name':'HTML',
        'icon': 'devicon-html5-plain-wordmark',
-       'niveau': 40,
+       'niveau': 80,
      },
      {
        'name':'CSS',
@@ -18,7 +20,7 @@ $(document).ready(function(){
      {
        'name':'javascript',
        'icon': 'devicon-javascript-plain',
-       'niveau' : 10,
+       'niveau' : 30,
       },
      {
        'name':'JAVA',
@@ -43,11 +45,6 @@ $(document).ready(function(){
        'icon':'devicon-sass-original',
        'niveau' : 2
      },
-     {
-       'name':'Doctrine',
-       'icon':'devicon-doctrine-plain-wordmark',
-       'niveau' : 2
-      },
       {
         'name':'Jquery',
         'icon': 'devicon-jquery-plain-wordmark',
@@ -124,6 +121,24 @@ $(document).ready(function(){
     },
   ]
 
+  var listDb = [
+    {
+      'name':'Workbench',
+      'icon': 'devicon-trello-plain-wordmark',
+      'niveau' : 2
+    },
+    {
+      'name':'phpMyAdmin',
+      'icon': 'devicon-trello-plain-wordmark',
+      'niveau' : 4
+    },
+    {
+      'name':'Doctrine',
+      'icon':'devicon-doctrine-plain-wordmark',
+      'niveau' : 2
+     },
+  ];
+
   var listTools = [
      {
        'name':'Bitbucket',
@@ -150,20 +165,12 @@ $(document).ready(function(){
        'icon': 'devicon-trello-plain-wordmark',
        'niveau' : 4
      },
-     {
-       'name':'Workbench',
-       'icon': 'devicon-trello-plain-wordmark',
-       'niveau' : 2
-     },
-     {
-       'name':'phpMyAdmin',
-       'icon': 'devicon-trello-plain-wordmark',
-       'niveau' : 4
-     },
     ];
 
+/* ------- Fonction --------- */
+
 /**
- * Création des progresse bar pour le tableau langage
+ * Construit un bloc progress-bar pour chaque compétence de langages
  */
 function createBar(){
   $.each(listLanguages, function(key,value){
@@ -185,7 +192,10 @@ function createBar(){
 }
 
 /**
- * Créer le bon nombre de pill remplis pour une competence lister
+ * Construit les notations sur 5
+ * @param array list, tableau contenant la compétence
+ * @param str skill, nom de la classe
+ * @param idSkill int idSkill, numéro id de la compétence
  */
 function createPills(list,skill,idSkill){
   for(var i = 1; i <=5; i++){
@@ -199,21 +209,26 @@ function createPills(list,skill,idSkill){
 }
 
 /**
- *
+ * Construit une liste de compétence à partir d'un tableau
+ * @param array list, tableau contenant une liste de compétence
+ * @param str divId, classe ou id de div
  */
 function createList(list,divId){
   $.each(list, function(key,value){
     $(divId).append(
-      '<p class="li-skill '+value['name']+'"> <span class="col-md-8"><i class="'+value['icon']+'"></i> '+value['name']+'</span> </p>'
+      '<p class="li-skill '+value['name']+'"> <span class="col-xs-8 col-sm-8 col-md-8"><i class="'+value['icon']+'"></i> '+value['name']+'</span> </p>'
     );
     createPills(list,value['name'],key);
   });
 }
 
+/* -----------  Controller  --------- */
+
 createBar();
 createList(listOs,'#listOs');
 createList(listFrameworks, '#listFrameworks');
 createList(listTools, '#listTools');
+createList(listDb, '#listDb');
 createList(listGraphic, '#listGraphic');
 createList(listIde, '#listIde');
 
