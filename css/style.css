@@ -75,6 +75,7 @@
 .btn{
   padding: 10px 18px;
 }
+
 /* -- projet -- */
 .project{
   border: 8px solid #243f46;
@@ -93,10 +94,25 @@
   color: #fff;
   margin: 2px;
 }
+.icon-link{
+  font-size: 42px;
+  text-align: right;
+}
+
 /* -- En savoir plus -- */
 .border-dashed{
   border: 4px dashed #fff;
   padding: 10px;
+}
+
+.bold-dark{
+  font-weight: 600;
+  color: #243f46;
+}
+
+.list-space li{
+  list-style: none;
+  margin: 20px 0px;
 }
 /* -- -- */
 .navbar{
