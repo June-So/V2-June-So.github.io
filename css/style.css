@@ -49,10 +49,13 @@
 
 /* -- Accueil -- */
 .header-home{
-  height: 34vh;
+  min-height: 34vh;
   padding: 50px;
 }
 
+.header-home p, .header-home li{
+  font-size: 20px;
+}
 .presentation-content{
   background-color: #fff;
   color: black;
@@ -76,14 +79,37 @@
   padding: 10px 18px;
 }
 
+/* -- Compétence -- */
+#listLanguages{
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#listFrameworks{
+  padding: 30px 20px;
+}
+
+.li-skill{
+  margin: 4px 0px;
+}
+
 /* -- projet -- */
 .project{
   border: 8px solid #243f46;
-  min-height: 250px;
+  height: 260px;
   padding: 10px;
+  position: relative;
 }
 
-@media (min-width: 985px) {
+
+@media (min-width: 992px){
+  .project{
+    height: 370px;
+  }
+}
+
+@media (min-width: 1221px) {
   .project{
     height: 300px;
   }
@@ -97,6 +123,9 @@
 .icon-link{
   font-size: 42px;
   text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
 }
 
 /* -- En savoir plus -- */
@@ -113,6 +142,11 @@
 .list-space li{
   list-style: none;
   margin: 20px 0px;
+}
+
+.icon-contact{
+  font-size: 42px;
+  margin: 10px;
 }
 /* -- -- */
 .navbar{
@@ -141,6 +175,11 @@
   padding: 5px 18px;
 }
 
+.title-underline{
+  margin: 20px;
+  text-decoration: underline;
+}
+
 .second-content{
   padding: 42px;
   min-height: 68vh;
@@ -148,18 +187,4 @@
 
 .fa-circle{
   color: #243f46;
-}
-
-#listLanguages{
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#listFrameworks{
-  padding: 30px 20px;
-}
-
-.li-skill{
-  margin: 4px 0px;
 }
