@@ -3,11 +3,6 @@ $(document).ready(function(){
   /* Donées */
   var listLanguages = [
      {
-       'name':'PHP',
-       'icon': 'devicon-php-plain',
-       'niveau' : 60,
-     },
-     {
        'name':'HTML',
        'icon': 'devicon-html5-plain-wordmark',
        'niveau': 80,
@@ -22,6 +17,16 @@ $(document).ready(function(){
        'icon': 'devicon-javascript-plain',
        'niveau' : 30,
       },
+      {
+        'name':'PHP',
+        'icon': 'devicon-php-plain',
+        'niveau' : 60,
+      },
+      {
+        'name':'mysql',
+        'icon': 'devicon-mysql-plain-wordmark',
+        'niveau' : 50,
+       },
      {
        'name':'JAVA',
        'icon': 'devicon-java-plain-wordmark',
