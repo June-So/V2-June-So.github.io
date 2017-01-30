@@ -129,6 +129,16 @@
 }
 
 /* -- En savoir plus -- */
+.text{
+  padding: 20px 0px 5px 0px;
+  line-height: 1.5em;
+}
+
+.text p{
+  padding-bottom: 10px;
+}
+
+
 .border-dashed{
   border: 4px dashed #fff;
   padding: 10px;
@@ -183,6 +193,10 @@
 .second-content{
   padding: 42px;
   min-height: 68vh;
+}
+
+.third-content{
+  padding: 0px 10px 20px 0px;
 }
 
 .fa-circle{
