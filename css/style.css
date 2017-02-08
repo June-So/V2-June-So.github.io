@@ -1,6 +1,6 @@
 .body
   {
-    height: 100vh;
+    min-height: 100vh;
   }
 /* Conteneur du bouton progress bar */
 [class*="skill-"]{
@@ -49,8 +49,8 @@
 
 /* -- Accueil -- */
 .header-home{
-  min-height: 34vh;
-  padding: 50px;
+  min-height: 30vh;
+  padding: 38px 24px;
 }
 
 .header-home p, .header-home li{
@@ -59,10 +59,16 @@
 .presentation-content{
   background-color: #fff;
   color: black;
-  min-height: 60vh;
+  min-height: 60.4vh;
+  display: flex;
 }
 
+.vcenter{
+  margin: auto;
+}
 .info{
+  display:inline-block;
+  vertical-align:middle;
   padding: 40px 60px;
   text-align: center;
 }
@@ -107,6 +113,10 @@
   .project{
     height: 370px;
   }
+  .header-home{
+    padding-top: 50px;
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 1221px) {
@@ -138,6 +148,10 @@
   padding-bottom: 10px;
 }
 
+.description-contain{
+  height:58vh;
+  display: flex;
+}
 
 .border-dashed{
   border: 4px dashed #fff;
@@ -192,15 +206,26 @@
 
 .second-content{
   padding: 42px;
-  min-height: 68vh;
+  min-height: 64.5vh;
 }
 
 .third-content{
   margin-top: 20px;
-  margin-right: 20px;
   margin-bottom: 40px;
 }
 
 .fa-circle{
   color: #243f46;
+}
+
+.project-contain{
+  min-height: 90vh;
+  display: flex;
+}
+
+footer{
+  text-align: right;
+  position:absolute;
+  bottom: 0px;
+  padding-top: 10px;
 }
